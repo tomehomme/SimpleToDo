@@ -22,13 +22,14 @@ The following **additional** features are implemented:
 
 * [x] User must enter an item to add the item to the list (no empty strings)
 * [x] Toast message if User enters an empty string
-* [x] Improvement of UI
+* [x] Added divider between every todo item in list
+* [x] Simple UI improvements including spacing and text color
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/2sLpo73' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
