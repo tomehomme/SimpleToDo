@@ -2,6 +2,7 @@ package com.example.simpletodo;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -29,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
     public static final int EDIT_TEXT_CODE = 20;
 
     List<String> items;
-
     Button btnAdd;
     EditText etItem;
     RecyclerView rvItems;
@@ -75,6 +75,9 @@ public class MainActivity extends AppCompatActivity {
         itemsAdapter = new ItemsAdapter(items, onLongClickListener, onClickListener);
         rvItems.setAdapter(itemsAdapter);
         rvItems.setLayoutManager(new LinearLayoutManager(this));
+        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(rvItems.getContext(),1);
+        rvItems.addItemDecoration(dividerItemDecoration);
+
 
         btnAdd.setOnClickListener(new View.OnClickListener(){
             @Override
